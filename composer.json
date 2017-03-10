@@ -18,8 +18,9 @@
     "drupal/core": "~8",
 
     "drupal/console": "^1.0.0-rc8",
-    "drush/drush": "~8",
+    "drush/drush": "dev-chmod-settings-8",
     "drupal/config_direct_save": "^1.0",
+    "drupal/config_installer": "^1",
     "drupal/pathauto": "^1.0@RC"
   },
   "require-dev": {
@@ -39,7 +40,7 @@
   "conflict": {
       "drupal/drupal": "*"
   },
-  "minimum-stability": "alpha",
+  "minimum-stability": "dev",
   "prefer-stable": true,
   "autoload": {
     "classmap": [

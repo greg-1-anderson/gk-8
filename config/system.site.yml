@@ -1,0 +1,14 @@
+uuid: 296d5969-f7b2-47ea-9c7a-511ecd66cec7
+name: gk-8
+mail: admin@example.com
+slogan: 'Most amazing site ever'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
