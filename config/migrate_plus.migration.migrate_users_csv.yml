@@ -1,0 +1,30 @@
+uuid: 4e0dd121-1dd8-43f7-b665-fd05b8839c24
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_users_csv
+migration_tags: null
+migration_group: null
+label: 'Import Greenknowe users'
+source:
+  plugin: csv
+  path: /srv/bindings/96663e77977246ab89e6e6a9e29e50b9/files/users.csv
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    -
+      id: 'User Id'
+    -
+      name: Name
+    -
+      mail: Mail
+process:
+  uid: id
+  name: name
+  mail: mail
+destination:
+  plugin: 'entity:user'
+migration_dependencies: null

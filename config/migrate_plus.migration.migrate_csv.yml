@@ -1,0 +1,32 @@
+uuid: 0cdf8c76-9447-43ad-88dd-7ab828ce7383
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_csv
+migration_tags: null
+migration_group: null
+label: 'Import Greenknowe content'
+source:
+  plugin: csv
+  path: /srv/bindings/96663e77977246ab89e6e6a9e29e50b9/files/greenknowe-node-export-pages-only.csv
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    0:
+      id: 'Unique Id'
+    6:
+      title: Title
+    8:
+      body: Body
+process:
+  title: title
+  body: body
+  type:
+    plugin: default_value
+    default_value: article
+destination:
+  plugin: 'entity:node'
+migration_dependencies: null
