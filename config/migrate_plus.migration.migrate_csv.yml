@@ -6,6 +6,7 @@ id: migrate_csv
 migration_tags: null
 migration_group: null
 label: 'Import Greenknowe content'
+
 source:
   plugin: csv
   path: /srv/bindings/96663e77977246ab89e6e6a9e29e50b9/files/greenknowe-node-export-pages-only.csv
@@ -17,16 +18,34 @@ source:
   column_names:
     0:
       id: 'Unique Id'
+    1:
+      uid: 'User Id'
+    2:
+      vid: 'Vocabulary Id'
+    4:
+      created: Created
+    5:
+      path: Path
     6:
       title: Title
+    7:
+      tags: Tags
     8:
       body: Body
+  constants:
+    type: article
+    format: restricted_html
 process:
   title: title
-  body: body
-  type:
-    plugin: default_value
-    default_value: article
+  body/0/value: body
+  body/0/format: constants/format
+  type: constants/type
+  vid: vid
+  uid: uid
+  created: created
+  'path/alias': path
+  field_tags: tags
+
 destination:
   plugin: 'entity:node'
 migration_dependencies: null
