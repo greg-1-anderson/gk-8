@@ -25,6 +25,9 @@ process:
   uid: id
   name: name
   mail: mail
+  status:
+    plugin: default_value
+    default_value: 1
 destination:
   plugin: 'entity:user'
 migration_dependencies: null

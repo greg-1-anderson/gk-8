@@ -24,6 +24,18 @@ $config_directories = array(
 );
 
 /**
+ * Disable outgoing email on Pantheon, except on test and live environments.
+ */
+if (
+  isset($_ENV['PANTHEON_ENVIRONMENT']) &&
+  ( ($_ENV['PANTHEON_ENVIRONMENT'] != 'live') && ($_ENV['PANTHEON_ENVIRONMENT'] != 'test') )
+) {
+  $conf['mail_system'] = array(
+    'default-system' => 'DevelMailLog',
+  );
+}
+
+/**
  * If there is a local settings file, then include it
  */
 $local_settings = __DIR__ . "/settings.local.php";
