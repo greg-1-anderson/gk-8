@@ -8,7 +8,7 @@ migration_group: null
 label: 'Import Greenknowe content'
 source:
   plugin: csv
-  path: public://greenknowe-node-export-pages-only.csv
+  path: 'public://greenknowe-node-export-pages-only.csv'
   delimiter: ','
   enclosure: '"'
   header_row_count: 1

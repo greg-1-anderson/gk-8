@@ -1,6 +1,6 @@
 uuid: dccba978-5ec2-4b05-96e8-2187d1d6b290
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
@@ -12,8 +12,8 @@ _core:
   default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
 id: bartik_tools
 theme: bartik
-region: sidebar_first
-weight: 0
+region: '-1'
+weight: -6
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
