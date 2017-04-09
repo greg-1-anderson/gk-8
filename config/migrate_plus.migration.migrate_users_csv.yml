@@ -8,7 +8,7 @@ migration_group: null
 label: 'Import Greenknowe users'
 source:
   plugin: csv
-  path: /srv/bindings/96663e77977246ab89e6e6a9e29e50b9/files/users.csv
+  path: 'public://users.csv'
   delimiter: ','
   enclosure: '"'
   header_row_count: 1
