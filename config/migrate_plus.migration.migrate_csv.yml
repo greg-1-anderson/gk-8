@@ -6,10 +6,9 @@ id: migrate_csv
 migration_tags: null
 migration_group: null
 label: 'Import Greenknowe content'
-
 source:
   plugin: csv
-  path: /srv/bindings/96663e77977246ab89e6e6a9e29e50b9/files/greenknowe-node-export-pages-only.csv
+  path: public://greenknowe-node-export-pages-only.csv
   delimiter: ','
   enclosure: '"'
   header_row_count: 1
@@ -34,7 +33,7 @@ source:
       body: Body
   constants:
     type: article
-    format: restricted_html
+    format: basic_html
 process:
   title: title
   body/0/value: body
@@ -43,9 +42,16 @@ process:
   vid: vid
   uid: uid
   created: created
-  'path/alias': path
-  field_tags: tags
-
+  changed: changed
+  path/alias: path
+  field_tags:
+    -
+      plugin: explode
+      delimiter: ', '
+      source: tags
+    -
+      plugin: migration
+      migration: tags_csv
 destination:
   plugin: 'entity:node'
 migration_dependencies: null

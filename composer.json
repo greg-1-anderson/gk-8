@@ -24,7 +24,8 @@
     "drupal/migrate_source_csv": "^2.0",
     "drupal/migrate_plus": "^2.0",
     "drupal/migrate_tools": "^2.0",
-    "drupal/devel": "^1.0@RC"
+    "drupal/devel": "^1.0@RC",
+    "drupal/config_inspector": "^1.0@beta"
   },
   "require-dev": {
     "mikey179/vfsstream": "^1.2",

@@ -1,0 +1,24 @@
+uuid: 20fc01af-5139-4249-8d53-5194b881e335
+langcode: en
+status: true
+dependencies: {  }
+id: tags_csv
+migration_tags: null
+migration_group: null
+label: 'Import Greenknowe tags'
+source:
+  plugin: csv
+  path: 'public://tags.csv'
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+    - Term
+  fields:
+    Term: 'The term'
+process:
+  name: Term
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: tags
+migration_dependencies: null

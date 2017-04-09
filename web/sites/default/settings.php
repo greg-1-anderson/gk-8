@@ -50,3 +50,9 @@ if (file_exists($local_settings)) {
  * See: tests/installer-features/installer.feature
  */
 $settings['install_profile'] = 'standard';
+
+
+# $settings['file_public_base_url'] = 'http://downloads.example.com/files';
+$settings['file_public_path'] = 'files';
+# $settings['file_private_path'] = '';
+
