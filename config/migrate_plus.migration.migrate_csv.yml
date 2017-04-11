@@ -36,7 +36,11 @@ source:
     format: basic_html
 process:
   title: title
-  body/0/value: body
+  body/0/value:
+    -
+      plugin: inline_images
+      base: files/image
+      source: body
   body/0/format: constants/format
   type: constants/type
   vid: vid
