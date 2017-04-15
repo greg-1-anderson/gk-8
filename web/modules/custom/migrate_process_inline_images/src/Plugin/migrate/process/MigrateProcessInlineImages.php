@@ -41,7 +41,7 @@ class MigrateProcessInlineImages extends ProcessPluginBase {
    */
   protected function cleanUpImageAttributes($imgElement)
   {
-    $file_storage = \Drupal::entityManager()->getStorage('file');
+    $file_storage = \Drupal::entityTypeManager()->getStorage('file');
 
     // Pull the image path out of the image element.
     if (!preg_match('#src="([^"]*)"#', $imgElement, $matches)) {
