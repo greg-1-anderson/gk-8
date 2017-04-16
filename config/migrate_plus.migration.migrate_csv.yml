@@ -15,38 +15,41 @@ source:
   keys:
     - id
   column_names:
-    0:
+    -
       id: 'Unique Id'
-    1:
+    -
       uid: 'User Id'
-    2:
+    -
       vid: 'Vocabulary Id'
-    4:
+    -
+      type: 'Content Type'
+    -
       created: Created
-    5:
+    -
+      changed: Modified
+    -
       path: Path
-    6:
+    -
       title: Title
-    7:
+    -
       tags: Tags
-    8:
+    -
       body: Body
   constants:
-    type: article
     format: basic_html
 process:
   title: title
+  type: type
+  vid: vid
+  uid: uid
+  created: created
+  changed: changed
   body/0/value:
     -
       plugin: inline_images
       base: files/image
       source: body
   body/0/format: constants/format
-  type: constants/type
-  vid: vid
-  uid: uid
-  created: created
-  changed: changed
   path/alias: path
   field_tags:
     -

@@ -1,0 +1,70 @@
+uuid: 634a8356-b56a-41e0-b432-10087f14f54c
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_book_navigation_csv
+migration_tags: null
+migration_group: null
+label: 'Import Greenknowe book navigation'
+source:
+  plugin: csv
+  path: 'public://greenknowe-book-navigation.csv'
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    -
+      nid: 'Unique Id'
+    -
+      pid: 'Parent Id'
+    -
+      has_children: 'Has Children'
+    -
+      weight: Weight
+    -
+      depth: Depth
+    -
+      p1: p1
+    -
+      p2: p2
+    -
+      p3: p3
+    -
+      p4: p4
+    -
+      p5: p5
+    -
+      p6: p6
+    -
+      p7: p7
+    -
+      p8: p8
+    -
+      p9: p9
+    -
+      menu_name: 'Menu name'
+    -
+      link_title: 'Link title'
+  constants:
+    format: basic_html
+process:
+  nid: nid
+  bid: bid
+  pid: pid
+  has_children: has_children
+  weight: weight
+  depth: depth
+  p1: p1
+  p2: p2
+  p3: p3
+  p4: p4
+  p5: p5
+  p6: p6
+  p7: p7
+  p8: p8
+  p9: p9
+destination:
+  plugin: 'entity:book'
+migration_dependencies: null
