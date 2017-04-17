@@ -13,7 +13,7 @@ source:
   enclosure: '"'
   header_row_count: 1
   keys:
-    - id
+    - nid
   column_names:
     -
       nid: 'Unique Id'
@@ -50,9 +50,18 @@ source:
   constants:
     format: basic_html
 process:
-  nid: nid
-  bid: bid
-  pid: pid
+  nid:
+    plugin: migration
+    migration: migrate_csv
+    source: nid
+  bid:
+    plugin: migration
+    migration: migrate_csv
+    source: bid
+  pid:
+    plugin: migration
+    migration: migrate_csv
+    source: pid
   has_children: has_children
   weight: weight
   depth: depth
@@ -66,5 +75,5 @@ process:
   p8: p8
   p9: p9
 destination:
-  plugin: 'entity:book'
+  plugin: 'book'
 migration_dependencies: null
