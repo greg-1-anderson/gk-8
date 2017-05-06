@@ -1,0 +1,64 @@
+uuid: 0cdf8c76-9447-43ad-88dd-7ab828ce7383
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_csv
+migration_tags: null
+migration_group: null
+label: 'Import Greenknowe content'
+source:
+  plugin: csv
+  path: 'public://greenknowe-node-export-pages-only.csv'
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    -
+      id: 'Unique Id'
+    -
+      uid: 'User Id'
+    -
+      vid: 'Vocabulary Id'
+    -
+      type: 'Content Type'
+    -
+      created: Created
+    -
+      changed: Modified
+    -
+      path: Path
+    -
+      title: Title
+    -
+      tags: Tags
+    -
+      body: Body
+  constants:
+    format: basic_html
+process:
+  title: title
+  type: type
+  vid: vid
+  uid: uid
+  created: created
+  changed: changed
+  body/0/value:
+    -
+      plugin: inline_images
+      base: files/image
+      source: body
+  body/0/format: constants/format
+  path/alias: path
+  field_tags:
+    -
+      plugin: explode
+      delimiter: ', '
+      source: tags
+    -
+      plugin: migration
+      migration: tags_csv
+destination:
+  plugin: 'entity:node'
+migration_dependencies: null

@@ -1,0 +1,56 @@
+uuid: ee230a6c-3dcd-4704-a05e-43c8b5639f5f
+langcode: en
+status: true
+dependencies: {  }
+id: migrate_files_csv
+migration_tags: null
+migration_group: null
+label: 'Migrate list of csv files'
+source:
+  plugin: csv
+  path: 'public://greenknowe-files.csv'
+  header_row_count: 1
+  keys:
+    - fid
+  column_names:
+    -
+      fid: 'File Id'
+    -
+      filename: Filename
+  constants:
+    file_source_uri: 'public://import'
+    file_dest_uri: 'public://image'
+process:
+  uid:
+    plugin: default_value
+    default_value: 1
+  fid: fid
+  filename: filename
+  file_source:
+    -
+      plugin: concat
+      delimiter: /
+      source:
+        - constants/file_source_uri
+        - filename
+    -
+      plugin: urlencode
+  file_dest:
+    -
+      plugin: concat
+      delimiter: /
+      source:
+        - constants/file_dest_uri
+        - filename
+    -
+      plugin: urlencode
+  uri:
+    plugin: file_copy
+    source:
+      - '@file_source'
+      - '@file_dest'
+destination:
+  plugin: 'entity:file'
+  source_path_property: filepath
+  destination_path_property: uri
+migration_dependencies: {  }
