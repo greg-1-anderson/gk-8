@@ -1,0 +1,25 @@
+uuid: 017fd5a9-4fad-41a4-83da-7bf2487c8d3a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d79839bc-9476-4828-9488-1a3775b9ff58'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: nationalprioritiesproject
+theme: bartik
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:d79839bc-9476-4828-9488-1a3775b9ff58'
+settings:
+  id: 'block_content:d79839bc-9476-4828-9488-1a3775b9ff58'
+  label: 'National Priorities Project'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
