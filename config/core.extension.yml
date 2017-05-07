@@ -12,6 +12,9 @@ module:
   config_inspector: 0
   contact: 0
   contextual: 0
+  ctools: 0
+  ctools_block: 0
+  ctools_views: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
@@ -34,6 +37,7 @@ module:
   options: 0
   page_cache: 0
   path: 0
+  pathauto: 0
   quickedit: 0
   rdf: 0
   search: 0
@@ -41,8 +45,10 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
+  tracker: 0
   update: 0
   user: 0
   views_ui: 0

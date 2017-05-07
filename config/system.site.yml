@@ -1,11 +1,11 @@
 uuid: bdc5ebcf-714a-42eb-8697-6aad030225cb
-name: gk-8
+name: GreenKnowe
 mail: greg.1.anderson@greenknowe.org
-slogan: ''
+slogan: 'Better Living through Environmentalism'
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/31
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
