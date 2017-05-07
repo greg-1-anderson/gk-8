@@ -88,5 +88,5 @@ process:
   book/p8: p8
   book/p9: p9
 destination:
-  plugin: 'book'
+  plugin: book
 migration_dependencies: null
