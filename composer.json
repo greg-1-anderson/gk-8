@@ -24,7 +24,8 @@
     "drupal/devel": "^1.0@RC",
     "drupal/config_inspector": "^1.0@beta",
     "drush/drush": "^8",
-    "drupal/config_installer": "^1.4"
+    "drupal/config_installer": "^1.4",
+    "drupal/simple_block": "^1.0@beta"
   },
   "require-dev": {
     "mikey179/vfsstream": "^1.2",

@@ -1,0 +1,22 @@
+uuid: fd1b9e4d-218c-4557-ae63-915176f70e37
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.matter_of_trust
+  module:
+    - simple_block
+  theme:
+    - bartik
+id: amatteroftrust
+theme: bartik
+region: footer_third
+weight: 0
+provider: null
+plugin: 'simple_block:matter_of_trust'
+settings:
+  id: 'simple_block:matter_of_trust'
+  label: 'A Matter of Trust'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

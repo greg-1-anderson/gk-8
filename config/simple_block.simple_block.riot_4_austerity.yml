@@ -1,0 +1,11 @@
+uuid: 10780bac-97c7-4bf7-b4d9-7885339d9c47
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: riot_4_austerity
+title: 'Riot 4 Austerity'
+content:
+  value: "<p><a href=\"https://simplereduce.wordpress.com/riot-for-austerity90-rules\"><img alt=\"Riot 4 Austerity\" data-align=\"left\" data-entity-type=\"file\" data-entity-uuid=\"8efadfa4-ab01-4395-baff-f47ff8730080\" src=\"/files/image/riot-logo-sm_1.png\" />Riot 4 Austerity</a><br />\r\n90% Rules<br />\r\nSimplify + Reduce</p>\r\n"
+  format: basic_html

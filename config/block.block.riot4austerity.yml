@@ -1,11 +1,11 @@
-uuid: 12d79333-e389-4ca2-89f0-ff4e76e3468a
+uuid: ae29ab73-7120-4a30-95a0-48332bbe1145
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:bbbb6ca3-5cf1-4543-94d7-36462028a965'
+  config:
+    - simple_block.simple_block.riot_4_austerity
   module:
-    - block_content
+    - simple_block
   theme:
     - bartik
 id: riot4austerity
@@ -13,13 +13,10 @@ theme: bartik
 region: footer_first
 weight: 0
 provider: null
-plugin: 'block_content:bbbb6ca3-5cf1-4543-94d7-36462028a965'
+plugin: 'simple_block:riot_4_austerity'
 settings:
-  id: 'block_content:bbbb6ca3-5cf1-4543-94d7-36462028a965'
+  id: 'simple_block:riot_4_austerity'
   label: 'Riot 4 Austerity'
-  provider: block_content
+  provider: simple_block
   label_display: '0'
-  status: true
-  info: ''
-  view_mode: full
 visibility: {  }

@@ -1,0 +1,11 @@
+uuid: 1897509a-a1d0-43ae-baf2-165a16f341aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: national_priorities_project
+title: 'National Priorities Project'
+content:
+  value: "<p><a href=\"https://www.nationalpriorities.org/cost-of/war/\"><img alt=\"National Priorities Project\" data-align=\"left\" data-entity-type=\"file\" data-entity-uuid=\"688f0385-c719-49b4-8362-a049128b4ccf\" height=\"51\" src=\"/files/image/national_priorities_project_logo_1.jpg\" width=\"52\" />Cost of Wars Since 2001:</a><br />\r\nOver $1 Trillion</p>\r\n"
+  format: basic_html

@@ -1,11 +1,11 @@
-uuid: 017fd5a9-4fad-41a4-83da-7bf2487c8d3a
+uuid: 807fd35c-a9fa-430b-843b-1a56b85bcc71
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:d79839bc-9476-4828-9488-1a3775b9ff58'
+  config:
+    - simple_block.simple_block.national_priorities_project
   module:
-    - block_content
+    - simple_block
   theme:
     - bartik
 id: nationalprioritiesproject
@@ -13,13 +13,10 @@ theme: bartik
 region: footer_second
 weight: 0
 provider: null
-plugin: 'block_content:d79839bc-9476-4828-9488-1a3775b9ff58'
+plugin: 'simple_block:national_priorities_project'
 settings:
-  id: 'block_content:d79839bc-9476-4828-9488-1a3775b9ff58'
+  id: 'simple_block:national_priorities_project'
   label: 'National Priorities Project'
-  provider: block_content
+  provider: simple_block
   label_display: '0'
-  status: true
-  info: ''
-  view_mode: full
 visibility: {  }
