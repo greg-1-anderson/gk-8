@@ -13,7 +13,9 @@ source:
   enclosure: '"'
   header_row_count: 1
   keys:
+    - nid
     - bid
+    - pid
     - p1
     - p2
     - p3
