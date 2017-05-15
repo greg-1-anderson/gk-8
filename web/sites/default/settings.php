@@ -6,6 +6,19 @@
 $settings['container_yamls'][] = __DIR__ . '/services.yml';
 
 /**
+ * Ensure that Twig files are correctly located.
+ */
+if (isset($_ENV['PANTHEON_ROLLING_TMP']) && isset($_ENV['PANTHEON_DEPLOYMENT_IDENTIFIER'])) {
+  // Relocate the compiled twig files to <binding-dir>/tmp/ROLLING/twig.
+  // The location of ROLLING will change with every deploy.
+  $settings['php_storage']['twig']['directory'] = $_ENV['PANTHEON_ROLLING_TMP'];
+  // Ensure that the compiled twig templates will be rebuilt whenever the
+  // deployment identifier changes.  Note that a cache rebuild is also necessary.
+  $settings['deployment_identifier'] = $_ENV['PANTHEON_DEPLOYMENT_IDENTIFIER'];
+  $settings['php_storage']['twig']['secret'] = $settings['hash_salt'] . $settings['deployment_identifier'];
+}
+
+/**
  * Include the Pantheon-specific settings file.
  *
  * n.b. The settings.pantheon.php file makes some changes
