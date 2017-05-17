@@ -9,7 +9,6 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  * Ensure that Twig files are correctly located.
  */
 if (isset($_ENV['PANTHEON_ROLLING_TMP']) && isset($_ENV['PANTHEON_DEPLOYMENT_IDENTIFIER'])) {
-var_export($_ENV);
   // Relocate the compiled twig files to <binding-dir>/tmp/ROLLING/twig.
   // The location of ROLLING will change with every deploy.
   $settings['php_storage']['twig']['directory'] = $_ENV['PANTHEON_ROLLING_TMP'];
