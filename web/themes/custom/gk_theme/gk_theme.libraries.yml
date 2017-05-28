@@ -2,4 +2,4 @@ global-styling:
   version: VERSION
   css:
     theme:
-      main.css: {}
+      css/main.css: {}
