@@ -1,0 +1,22 @@
+uuid: a90d0716-0435-4bf4-9cfd-d66c043e38f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.riot_4_austerity
+  module:
+    - simple_block
+  theme:
+    - gk_theme
+id: gk_theme_riot4austerity
+theme: gk_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'simple_block:riot_4_austerity'
+settings:
+  id: 'simple_block:riot_4_austerity'
+  label: 'Riot 4 Austerity'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

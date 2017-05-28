@@ -1,0 +1,22 @@
+uuid: fef6736d-ed10-4c16-b1c2-7e38a12be5b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - gk_theme
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: gk_theme_search
+theme: gk_theme
+region: header
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

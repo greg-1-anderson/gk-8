@@ -1,0 +1,22 @@
+uuid: 5c3d4831-7655-4f4c-ba6a-0095ddf38672
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.national_priorities_project
+  module:
+    - simple_block
+  theme:
+    - gk_theme
+id: gk_theme_nationalprioritiesproject
+theme: gk_theme
+region: footer_second
+weight: 0
+provider: null
+plugin: 'simple_block:national_priorities_project'
+settings:
+  id: 'simple_block:national_priorities_project'
+  label: 'National Priorities Project'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

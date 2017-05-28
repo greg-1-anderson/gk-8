@@ -1,0 +1,22 @@
+uuid: 2a3f855d-4164-482c-ba00-b4bedcd716c7
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - gk_theme
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: gk_theme_powered
+theme: gk_theme
+region: '-1'
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

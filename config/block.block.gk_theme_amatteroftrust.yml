@@ -1,0 +1,22 @@
+uuid: fd53d978-d003-493e-859e-4d4cf0c73d63
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.matter_of_trust
+  module:
+    - simple_block
+  theme:
+    - gk_theme
+id: gk_theme_amatteroftrust
+theme: gk_theme
+region: footer_third
+weight: 0
+provider: null
+plugin: 'simple_block:matter_of_trust'
+settings:
+  id: 'simple_block:matter_of_trust'
+  label: 'A Matter of Trust'
+  provider: simple_block
+  label_display: '0'
+visibility: {  }
