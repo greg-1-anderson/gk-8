@@ -1,0 +1,22 @@
+uuid: 74725675-39bc-4737-b96a-87cf3f777506
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - gk_theme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: gk_theme_help
+theme: gk_theme
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

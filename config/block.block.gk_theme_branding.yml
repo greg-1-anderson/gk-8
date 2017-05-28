@@ -1,0 +1,25 @@
+uuid: 40d8d753-834f-4a84-89bd-87afab0c9a0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gk_theme
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: gk_theme_branding
+theme: gk_theme
+region: header
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

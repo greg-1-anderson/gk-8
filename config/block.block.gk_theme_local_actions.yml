@@ -1,0 +1,20 @@
+uuid: 108787c8-e78d-4c3c-bcee-c2f0de7bd940
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gk_theme
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: gk_theme_local_actions
+theme: gk_theme
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
