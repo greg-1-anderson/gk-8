@@ -7,4 +7,5 @@ logo:
   use_default: false
   path: ''
 favicon:
-  use_default: true
+  use_default: false
+  path: ''

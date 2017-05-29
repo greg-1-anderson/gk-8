@@ -1,0 +1,39 @@
+body {
+/*	font-size: 8px; */
+	/* font-family: veranda, arial; */
+}
+
+.red-bg {
+    background-color: #800;
+    color: white;
+}
+
+.orange-bg {
+    background-color: #840;
+    color: white;
+}
+
+.yellow-bg {
+    background-color: #880;
+    color: white;
+}
+
+.green-bg {
+    background-color: #080;
+    color: white;
+}
+
+.blue-bg {
+    background-color: #008;
+    color: white;
+}
+
+.indigo-bg {
+    background-color: #408;
+    color: white;
+}
+
+.violet-bg {
+    background-color: #808;
+    color: white;
+}

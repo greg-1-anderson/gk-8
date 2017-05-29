@@ -1,0 +1,11 @@
+uuid: 8182a0f5-062f-4373-9394-64d73b9bb529
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+id: treehugger
+title: Treehugger
+content:
+  value: "<p><a href=\"https://www.treehugger.com\"><img alt=\"treehugger\" data-align=\"left\" data-entity-type=\"file\" data-entity-uuid=\"f1d0ebe5-7eab-42f9-8a80-14bd8edcb3df\" src=\"/files/image/th-icon-green.png\" />treehugger</a><br />\r\nFinding a Greener Future</p>\r\n"
+  format: basic_html
