@@ -1,0 +1,22 @@
+uuid: 9e019f3c-f1b6-4a4c-9bde-67146a3ddac5
+langcode: en
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.treehugger
+  module:
+    - simple_block
+  theme:
+    - gk_theme
+id: treehugger
+theme: gk_theme
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'simple_block:treehugger'
+settings:
+  id: 'simple_block:treehugger'
+  label: Treehugger
+  provider: simple_block
+  label_display: '0'
+visibility: {  }

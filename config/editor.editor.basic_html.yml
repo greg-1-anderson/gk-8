@@ -19,16 +19,20 @@ settings:
           items:
             - Bold
             - Italic
+            - Underline
+            - Strike
         -
           name: Linking
           items:
             - DrupalLink
             - DrupalUnlink
         -
-          name: Lists
+          name: Structure
           items:
             - BulletedList
             - NumberedList
+            - Table
+            - HorizontalRule
         -
           name: Media
           items:
