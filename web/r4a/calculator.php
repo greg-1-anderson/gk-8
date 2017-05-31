@@ -1,4 +1,8 @@
 <?php
+
+// Old code - has a lot of warnings. Just silence them.
+ini_set('display_errors', 'Off');
+
 /* ----------------------------------------------------------------------------- */
 $AVG_DAILY_ELEC = 11000/365;  /* 11000 kWh ELECTRICITY per year */
 $AVG_DAILY_PTRL = 500/365;    /* 500 gallons GASOLINE/PETROL per year */
@@ -223,7 +227,7 @@ $you_bar = "<tr><td align=right><i>Your Usage</i></td><td><img src='$you_img' wi
 $tgt_bar = "<tr><td align=right>R4A Target</td><td><img src='graypix.gif' width=20 height=10></td></tr>";
 
 if ( $submitted == "yes" ) {
-  $water_results="<td align=center>You have used<br><font color='#3333FF'><b>$total_pct %</b></font><br> of the national average<br>for water</td>"; 
+  $water_results="<td align=center>You have used<br><font color='#3333FF'><b>$total_pct %</b></font><br> of the national average<br>for water</td>";
   $water_chart = "<td><table border=0 cellpadding=3 cellspacing=1>$avg_bar $you_bar $tgt_bar </table></td>";
 }
 
@@ -262,7 +266,7 @@ $you_bar = "<tr><td align=right><i>Your Usage</i></td><td><img src='$you_img' wi
 $tgt_bar = "<tr><td align=right>R4A Target</td><td><img src='graypix.gif' width=20 height=10></td></tr>";
 
 if ( $submitted == "yes" ) {
-  $goods_results="<td align=center>You have used<br><font color='#3333FF'><b>$total_pct %</b></font><br> of the national average<br>for consumer goods</td>"; 
+  $goods_results="<td align=center>You have used<br><font color='#3333FF'><b>$total_pct %</b></font><br> of the national average<br>for consumer goods</td>";
   $goods_chart = "<td><table border=0 cellpadding=3 cellspacing=1>$avg_bar $you_bar $tgt_bar </table></td>";
 }
 
@@ -326,7 +330,7 @@ if ( $submitted == "yes" ) {
 <table border=1 cellpadding=3 cellspacing=0 align=center bgcolor='#DDDDD'>
 <tr><td colspan=3><b>Transportation</b></td></tr>
 <tr>
-<td align=right>Gas, diesel, biofuels: <input type=text size=6 name=std_ptrl value="<? echo $std_ptrl; ?>"> gallons
+<td align=right>Gas, diesel, biofuels: <input type=text size=6 name=std_ptrl value="<?php echo $std_ptrl; ?>"> gallons
 per person per <select name=std_per>
 <option value="day" <?php echo $std_day; ?> >day</option>
 <option value="week" <?php echo $std_week; ?> >week</option>
@@ -344,10 +348,10 @@ per person per <select name=pt_per>
 <br>
 Waste veggie oil: <input type=text size=6 name=wvo_ptrl value="<?php echo $wvo_ptrl; ?>"> miles
 per person per <select name=wvo_per>
-<option value="day" <? echo $wvo_day; ?> >day</option>
-<option value="week" <? echo $wvo_week; ?> >week</option>
-<option value="month" <? echo $wvo_month; ?> >month</option>
-<option value="year" <? echo $wvo_year; ?> >year</option>
+<option value="day" <?php echo $wvo_day; ?> >day</option>
+<option value="week" <?php echo $wvo_week; ?> >week</option>
+<option value="month" <?php echo $wvo_month; ?> >month</option>
+<option value="year" <?php echo $wvo_year; ?> >year</option>
 </select>
 <br>
 </td>
@@ -355,30 +359,30 @@ per person per <select name=wvo_per>
 <?php echo $ptrl_chart; ?>
 </tr>
 
-<tr><td  colspan=3><b>Electricity</b></td></tr> 
+<tr><td  colspan=3><b>Electricity</b></td></tr>
 <tr>
-<td align=right>Conventional: <input type=text size=6 name=conv_kwh value="<? echo $conv_kwh; ?>"> kWh
+<td align=right>Conventional: <input type=text size=6 name=conv_kwh value="<?php echo $conv_kwh; ?>"> kWh
 per household per <select name=conv_per>
 <option value="day" <?php echo $conv_day; ?> >day</option>
-<option value="week" <?php echo $conv_week; ?> >week</option> 
+<option value="week" <?php echo $conv_week; ?> >week</option>
 <option value="month" <?php echo $conv_month; ?> >month</option>
 <option value="year" <?php echo $conv_year; ?> >year</option>
 </select>
 <br>
-Solar: <input type=text size=6 name=solar_kwh value="<?php echo $solar_kwh; ?>"> kWh 
+Solar: <input type=text size=6 name=solar_kwh value="<?php echo $solar_kwh; ?>"> kWh
 per household per <select name=solar_per>
 <option value="day" <?php echo $solar_day; ?> >day</option>
 <option value="week" <?php echo $solar_week; ?> >week</option>
 <option value="month" <?php echo $solar_month; ?> >month</option>
-<option value="year"> <?php echo $solar_year; ?>year</option> 
+<option value="year"> <?php echo $solar_year; ?>year</option>
 </select>
 <br>
 Wind/Hydro: <input type=text size=6 name=wind_kwh value="<?php echo $wind_kwh; ?>"> kWh
 per household per <select name=wind_per>
-<option value="day" <? echo $wind_day; ?> >day</option>
-<option value="week" <? echo $wind_week; ?> >week</option>
-<option value="month" <? echo $wind_month; ?> >month</option>
-<option value="year" <? echo $wind_year; ?> >year</option>
+<option value="day" <?php echo $wind_day; ?> >day</option>
+<option value="week" <?php echo $wind_week; ?> >week</option>
+<option value="month" <?php echo $wind_month; ?> >month</option>
+<option value="year" <?php echo $wind_year; ?> >year</option>
 </select>
 <br>
 </td>
@@ -386,38 +390,38 @@ per household per <select name=wind_per>
 <?php echo $elec_chart; ?>
 </tr>
 
-<tr><td  colspan=3><b>Heating & Cooking fuel</b></td></tr> 
+<tr><td  colspan=3><b>Heating &amp; Cooking fuel</b></td></tr>
 <tr>
-<td align=right>Natural Gas: <input type=text size=6 name=ng_heat value="<? echo $ng_heat; ?>"> therms
+<td align=right>Natural Gas: <input type=text size=6 name=ng_heat value="<?php echo $ng_heat; ?>"> therms
 per household per <select name=ng_per>
 <option value="day" <?php echo $ng_day; ?> >day</option>
-<option value="week" <?php echo $ng_week; ?> >week</option> 
+<option value="week" <?php echo $ng_week; ?> >week</option>
 <option value="month" <?php echo $ng_month; ?> >month</option>
 <option value="year" <?php echo $ng_year; ?> >year</option>
 </select>
 <br>
-Propane: <input type=text size=6 name=prop_heat value="<?php echo $prop_heat; ?>"> gallons 
+Propane: <input type=text size=6 name=prop_heat value="<?php echo $prop_heat; ?>"> gallons
 per household per <select name=prop_per>
 <option value="day" <?php echo $prop_day; ?> >day</option>
 <option value="week" <?php echo $prop_week; ?> >week</option>
 <option value="month" <?php echo $prop_month; ?> >month</option>
-<option value="year" <?php echo $prop_year; ?> >year</option> 
+<option value="year" <?php echo $prop_year; ?> >year</option>
 </select>
 <br>
-Heating Oil: <input type=text size=6 name=hoil_heat value="<?php echo $hoil_heat; ?>"> gallons 
+Heating Oil: <input type=text size=6 name=hoil_heat value="<?php echo $hoil_heat; ?>"> gallons
 per household per <select name=hoil_per>
 <option value="day" <?php echo $hoil_day; ?> >day</option>
 <option value="week" <?php echo $hoil_week; ?> >week</option>
 <option value="month" <?php echo $hoil_month; ?> >month</option>
-<option value="year" <?php echo $hoil_year; ?> >year</option> 
+<option value="year" <?php echo $hoil_year; ?> >year</option>
 </select>
 <br>
 Wood: <input type=text size=6 name=wood_heat value="<?php echo $wood_heat; ?>"> cords
 per household per <select name=wood_per>
-<option value="day" <? echo $wood_day; ?> >day</option>
-<option value="week" <? echo $wood_week; ?> >week</option>
-<option value="month" <? echo $wood_month; ?> >month</option>
-<option value="year" <? echo $wood_year; ?> >year</option>
+<option value="day" <?php echo $wood_day; ?> >day</option>
+<option value="week" <?php echo $wood_week; ?> >week</option>
+<option value="month" <?php echo $wood_month; ?> >month</option>
+<option value="year" <?php echo $wood_year; ?> >year</option>
 </select>
 <br>
 </td>
@@ -425,12 +429,12 @@ per household per <select name=wood_per>
 <?php echo $heat_chart; ?>
 </tr>
 
-<tr><td  colspan=3><b>Garbage</b></td></tr> 
+<tr><td  colspan=3><b>Garbage</b></td></tr>
 <tr>
-<td align=right>Garbage: <input type=text size=6 name=trash_wt value="<? echo $trash_wt; ?>"> lbs
+<td align=right>Garbage: <input type=text size=6 name=trash_wt value="<?php echo $trash_wt; ?>"> lbs
 per person per <select name=trash_per>
 <option value="day" <?php echo $trash_day; ?> >day</option>
-<option value="week" <?php echo $trash_week; ?> >week</option> 
+<option value="week" <?php echo $trash_week; ?> >week</option>
 <option value="month" <?php echo $trash_month; ?> >month</option>
 <option value="year" <?php echo $trash_year; ?> >year</option>
 </select>
@@ -442,7 +446,7 @@ per person per <select name=trash_per>
 
 <tr><td  colspan=3><b>Water</b></td></tr>
 <tr>
-<td align=right>Water: <input type=text size=6 name=water_vol value="<? echo $water_vol; ?>"> gallons
+<td align=right>Water: <input type=text size=6 name=water_vol value="<?php echo $water_vol; ?>"> gallons
 per person per <select name=water_per>
 <option value="day" <?php echo $water_day; ?> >day</option>
 <option value="week" <?php echo $water_week; ?> >week</option>
@@ -457,7 +461,7 @@ per person per <select name=water_per>
 
 <tr><td  colspan=3><b>Consumer Goods</b></td></tr>
 <tr>
-<td align=right>New stuff: <input type=text size=6 name=goods_new value="<? echo $goods_new; ?>"> dollars
+<td align=right>New stuff: <input type=text size=6 name=goods_new value="<?php echo $goods_new; ?>"> dollars
 per household per <select name=goods_per>
 <option value="day" <?php echo $goods_day; ?> >day</option>
 <option value="week" <?php echo $goods_week; ?> >week</option>
@@ -465,7 +469,7 @@ per household per <select name=goods_per>
 <option value="year" <?php echo $goods_year; ?> >year</option>
 </select>
 <br>
-Used stuff: <input type=text size=6 name=goods_used value="<? echo $goods_used; ?>"> dollars
+Used stuff: <input type=text size=6 name=goods_used value="<?php echo $goods_used; ?>"> dollars
 per household per <select name=used_per>
 <option value="day" <?php echo $used_day; ?> >day</option>
 <option value="week" <?php echo $used_week; ?> >week</option>
@@ -480,9 +484,9 @@ per household per <select name=used_per>
 
 <tr><td colspan=3><b>Food</b></td></tr>
 <tr>
-<td align=right>Local, sustainably grown: <input type=text size=3 name=local_food value="<? echo $local_food; ?>"> %<br>
-Dry, unprocessed bulk goods: <input type=text size=3 name=dry_bulk value="<? echo $dry_bulk; ?>"> %<br>
-Wet goods & conventional: <input type=text size=3 name=wet_goods value="<? echo $wet_goods; ?>"> %<br>
+<td align=right>Local, sustainably grown: <input type=text size=3 name=local_food value="<?php echo $local_food; ?>"> %<br>
+Dry, unprocessed bulk goods: <input type=text size=3 name=dry_bulk value="<?php echo $dry_bulk; ?>"> %<br>
+Wet goods &amp; conventional: <input type=text size=3 name=wet_goods value="<?php echo $wet_goods; ?>"> %<br>
 </td>
 <?php echo $food_key; ?>
 <?php echo $food_chart; ?>
@@ -494,7 +498,7 @@ if ( $submitted == "yes" ) {
 echo "<tr><td colspan=3><b>Overall (excluding Food)</b></td></tr>";
 echo "<tr> <td align=right>&nbsp;</td>";
 echo $overall_results;
-echo $overall_chart; 
+echo $overall_chart;
 echo "</tr>";
 }
 ?>
