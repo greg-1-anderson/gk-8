@@ -57,11 +57,6 @@ dependencies:
     - terminus env:wake -n "$TERMINUS_SITE.dev"
     - terminus build-env:create -n "$TERMINUS_SITE.dev" "$TERMINUS_ENV" --yes --clone-content --notify="$NOTIFY"
     - terminus drush -n "$TERMINUS_SITE.$TERMINUS_ENV" -- updatedb -y || terminus drush -n "$TERMINUS_SITE.$TERMINUS_ENV" -- cr -y && terminus drush -n "$TERMINUS_SITE.$TERMINUS_ENV" -- updatedb -y
-    - |
-      [ ! -f "config/system.site.yml" ] || terminus drush "$TERMINUS_SITE.$TERMINUS_ENV" -- config-import --yes
-      # Optional: replace lines above with lines below to re-install Drupal for every test.
-      # - terminus build-env:create -n "$TERMINUS_SITE.dev" "$TERMINUS_ENV" --yes --notify="$NOTIFY"
-      # - terminus build-env:site-install -n "$TERMINUS_SITE.$TERMINUS_ENV" --site-name="$TEST_SITE_NAME" --account-mail="$ADMIN_EMAIL" --account-pass="$ADMIN_PASSWORD"
 
 test:
   override:
