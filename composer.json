@@ -1,5 +1,5 @@
 {
-  "name": "pantheon-systems/example-drops-8-composer",
+  "name": "greg-1-anderson/gk-8",
   "description": "Install drops-8 with Composer on Pantheon.",
   "type": "project",
   "license": "MIT",
@@ -14,7 +14,7 @@
     "rvtraveller/qs-composer-installer": "^1.1",
     "drupal-composer/drupal-scaffold": "^2.0.1",
     "cweagans/composer-patches": "^1.0",
-    "drupal/core": "8.2.8",
+    "drupal/core": "^8",
 
     "drupal/config_direct_save": "^1.0",
     "drupal/pathauto": "^1.0@RC",
