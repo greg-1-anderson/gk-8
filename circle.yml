@@ -4,7 +4,7 @@ machine:
     America/Chicago
   php:
     # https://circleci.com/docs/build-image-trusty/#php
-    version: 7.0.11
+    version: 7.1.3
   environment:
     # In addition to the environment variables defined in this file, also
     # add the following variables in the Circle CI UI.
@@ -56,12 +56,7 @@ dependencies:
     - composer -n build-assets
     - terminus env:wake -n "$TERMINUS_SITE.dev"
     - terminus build-env:create -n "$TERMINUS_SITE.dev" "$TERMINUS_ENV" --yes --clone-content --notify="$NOTIFY"
-    - terminus drush -n "$TERMINUS_SITE.$TERMINUS_ENV" -- updatedb -y
-    - |
-      [ ! -f "config/system.site.yml" ] || terminus drush "$TERMINUS_SITE.$TERMINUS_ENV" -- config-import --yes
-      # Optional: replace lines above with lines below to re-install Drupal for every test.
-      # - terminus build-env:create -n "$TERMINUS_SITE.dev" "$TERMINUS_ENV" --yes --notify="$NOTIFY"
-      # - terminus build-env:site-install -n "$TERMINUS_SITE.$TERMINUS_ENV" --site-name="$TEST_SITE_NAME" --account-mail="$ADMIN_EMAIL" --account-pass="$ADMIN_PASSWORD"
+    - terminus drush -n "$TERMINUS_SITE.$TERMINUS_ENV" -- updatedb -y || terminus drush -n "$TERMINUS_SITE.$TERMINUS_ENV" -- cr -y && terminus drush -n "$TERMINUS_SITE.$TERMINUS_ENV" -- updatedb -y
 
 test:
   override:
