@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.book.body
+    - field.field.node.book.field_tags
     - node.type.book
   module:
     - text
@@ -23,7 +24,9 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
+    region: content
   links:
     weight: 101
+    region: content
 hidden:
   field_tags: true
