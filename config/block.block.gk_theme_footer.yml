@@ -12,7 +12,7 @@ _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
 id: gk_theme_footer
 theme: gk_theme
-region: '-1'
+region: header
 weight: -7
 provider: null
 plugin: 'system_menu_block:footer'

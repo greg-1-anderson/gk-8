@@ -1,0 +1,44 @@
+uuid: fef3c952-ba78-4f70-b547-ad0c8692364e
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access files overview'
+  - 'access in-place editing'
+  - 'access toolbar'
+  - 'add content to books'
+  - 'administer book outlines'
+  - 'administer comments'
+  - 'administer nodes'
+  - 'administer pathauto'
+  - 'administer taxonomy'
+  - 'administer url aliases'
+  - 'create article content'
+  - 'create book content'
+  - 'create new books'
+  - 'create url aliases'
+  - 'delete all revisions'
+  - 'delete any article content'
+  - 'delete any book content'
+  - 'delete article revisions'
+  - 'delete book revisions'
+  - 'delete own article content'
+  - 'delete own book content'
+  - 'delete terms in tags'
+  - 'edit any article content'
+  - 'edit any book content'
+  - 'edit own article content'
+  - 'edit own book content'
+  - 'edit terms in tags'
+  - 'notify of path changes'
+  - 'revert all revisions'
+  - 'revert article revisions'
+  - 'revert book revisions'
+  - 'view all revisions'
+  - 'view article revisions'
+  - 'view book revisions'

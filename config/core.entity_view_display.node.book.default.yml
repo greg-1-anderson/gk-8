@@ -22,6 +22,7 @@ content:
     weight: 100
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_tags:
     weight: 102
     label: above
@@ -29,6 +30,8 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
   links:
     weight: 101
+    region: content
 hidden: {  }
