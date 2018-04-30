@@ -2,6 +2,8 @@ version: 2
 dependencies:
 - type: php
   path: /
+  settings:
+    composer_options: "--ignore-platform-reqs"
   manifest_updates:
     filters:
     - name: ".*"
