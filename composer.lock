@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1447fa043dbe717aa367857c206dbc51",
+    "content-hash": "53edaaf52a8db2806b330bd3470d9c99",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3157,16 +3157,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "dev-master",
+            "version": "dev-redispatch-tty-exp",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "4990b4375e76cad8d4fa9c74a21d36e72af52b99"
+                "reference": "88130292e63dffd17718ca155320a0894022ded9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/4990b4375e76cad8d4fa9c74a21d36e72af52b99",
-                "reference": "4990b4375e76cad8d4fa9c74a21d36e72af52b99",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/88130292e63dffd17718ca155320a0894022ded9",
+                "reference": "88130292e63dffd17718ca155320a0894022ded9",
                 "shasum": ""
             },
             "require": {
@@ -3297,7 +3297,7 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2019-03-11T17:55:51+00:00"
+            "time": "2019-03-12T00:33:25+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
