@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb9692605444d11fd354cd86a8267078",
+    "content-hash": "554dd80ac46d20d30f5aeb5dcb48691b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3193,16 +3193,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "9.6.0-rc6",
+            "version": "dev-no-local-autoload-for-remote",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "5da1401091bfe97fb2064fe3aa1ee7694ad7b0ed"
+                "reference": "640700490af9627cb9dae8c22c8208b94b34aca9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/5da1401091bfe97fb2064fe3aa1ee7694ad7b0ed",
-                "reference": "5da1401091bfe97fb2064fe3aa1ee7694ad7b0ed",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/640700490af9627cb9dae8c22c8208b94b34aca9",
+                "reference": "640700490af9627cb9dae8c22c8208b94b34aca9",
                 "shasum": ""
             },
             "require": {
@@ -3333,7 +3333,7 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2019-03-12T20:05:25+00:00"
+            "time": "2019-03-12T23:57:07+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -8557,7 +8557,8 @@
         "drupal/pathauto": 5,
         "drupal/devel": 5,
         "drupal/config_inspector": 10,
-        "drupal/simple_block": 10
+        "drupal/simple_block": 10,
+        "drush/drush": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
