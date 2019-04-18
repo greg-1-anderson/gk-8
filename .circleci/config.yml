@@ -63,42 +63,6 @@ jobs:
                 paths:
                     - bash_env.txt
 
-    # @todo: common initialization: 'composer install' for the site-under-test
-    unit:
-        <<: *defaults
-
-        steps:
-            - checkout
-
-            - restore_cache:
-                keys:
-                    - composer-cache
-
-            - run:
-                name: setup-environment-vars
-                command: /build-tools-ci/scripts/set-environment
-
-            - run:
-                name: run composer install to get the vendor directory
-                command: composer install
-
-            - save_cache:
-                key: composer-cache
-                paths:
-                    - $HOME/.composer/cache
-
-            - run:
-                name: lint php code for syntax errors
-                command: composer -n lint
-
-            - run:
-                name: check coding standards
-                command: composer -n code-sniff
-
-            - run:
-                name: run unit tests
-                command: composer -n unit-test
-
     functional:
         <<: *defaults
         steps:
@@ -193,8 +157,6 @@ workflows:
     jobs:
         # Set up environment variables
         - configure_env_vars
-        # Install dev dependencies and do simple tests (sniff, unit tests, etc.)
-        - unit
         # Build deploy and test on target platform
         - functional
         # Deploy before running visual test
