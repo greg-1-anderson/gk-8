@@ -69,3 +69,12 @@ $settings['install_profile'] = 'standard';
 $settings['file_public_path'] = 'files';
 # $settings['file_private_path'] = '';
 
+$databases['default']['default'] = [
+  'database' => 'gk8db',
+  'username' => 'root',
+  'password' => 'pantheor-investigation',
+  'host' => '35.245.190.37',
+  'port' => '3306',
+  'driver' => 'mysql',
+  'prefix' => '',
+];
