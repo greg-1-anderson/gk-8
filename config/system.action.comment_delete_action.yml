@@ -1,4 +1,4 @@
-uuid: da7ecbc3-1b88-4b26-b240-ee63b5618a26
+uuid: fa697754-89b8-4bf0-a3c4-48ed1e444d52
 langcode: en
 status: true
 dependencies:
@@ -7,5 +7,5 @@ dependencies:
 id: comment_delete_action
 label: 'Delete comment'
 type: comment
-plugin: comment_delete_action
+plugin: 'entity:delete_action:comment'
 configuration: {  }
