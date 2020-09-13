@@ -14,7 +14,7 @@
     "composer/installers": "^1.0.20",
     "drupal/core-recommended": "^8.9",
     "drupal/core-composer-scaffold": "^8.9",
-    "drush/drush": "^8.3.5",
+    "drush/drush": "^9.6",
     "cweagans/composer-patches": "^1.0",
     "drupal/config_direct_save": "^1.0",
     "drupal/config_inspector": "^1.0@beta",
