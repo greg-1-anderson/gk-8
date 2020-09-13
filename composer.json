@@ -13,12 +13,12 @@
     "php": ">=7.3",
     "composer/installers": "^1.0.20",
     "cweagans/composer-patches": "^1.0",
-    "drupal-composer/drupal-scaffold": "^2.0.1",
+    "drupal/core-composer-scaffold": "^8.9",
     "drupal/config_direct_save": "^1.0",
     "drupal/config_inspector": "^1.0@beta",
     "drupal/config_installer": "^1.4",
     "drupal/console": "^1",
-    "drupal/core": "^8",
+    "drupal/core": "^8.9",
     "drupal/devel": "^1.0@RC",
     "drupal/migrate_plus": "^2.0",
     "drupal/migrate_source_csv": "^2.0",
@@ -99,19 +99,9 @@
       "export-configuration": "drush config-export --yes"
     },
     "drupal-scaffold": {
-      "source": "https://raw.githubusercontent.com/pantheon-systems/drops-8-scaffolding/{version}/{path}",
-      "includes": [
-        "sites/default/default.services.pantheon.preproduction.yml",
-        "sites/default/settings.pantheon.php"
-      ],
-      "excludes": [
-        ".csslintrc",
-        ".editorconfig",
-        ".eslintignore",
-        ".eslintrc.json",
-        ".htaccess",
-        "web.config"
-      ]
+      "locations": {
+          "web-root": "web/"
+      }
     }
   },
   "config": {
