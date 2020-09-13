@@ -99,6 +99,9 @@
       "export-configuration": "drush config-export --yes"
     },
     "drupal-scaffold": {
+      "allowed-packages": [
+          "pantheon-systems/drupal-integrations"
+      ],
       "locations": {
           "web-root": "web/"
       }
