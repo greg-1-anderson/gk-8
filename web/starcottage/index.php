@@ -1,10 +1,12 @@
-<html>
+<?php
+
+?><html>
 	<head>
 		<title>Star Cottage</title>
 	</head>
 	<body>
 		<h1>Star Cottage</h1>
-		
+
 		<p>
 		This newly built home has 11' ceilings and plenty of windows, giving you a wonderful view of San Bruno Mountain to the west.  The large overhangs keep the house shady and cool in the summer.  The roof sports a 1.6kwh solar array that is estimated to provide most of the household electric needs.
 		</p>
@@ -36,7 +38,7 @@
 		<h2>
 		Contact:
 		</h2>
-		
+
 		<p>
 		starcottage@greenknowe.org
 		</p>
