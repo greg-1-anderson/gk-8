@@ -50,11 +50,11 @@
 		</p>
 
 		<p>
-		Most small homes don't provide off-street parking.  This one not only has off street parking, but is EV ready.  You can park a second car across the driveway if you need an extra space.  The city free shuttle to Bart and Caltrain stops at the corner.  Brisbane is just 20 minutes from downtown SF. If you are heading south, being out of SF saves a lot of time while still being able to enjoy the city on the weekends.  Within walking distance to SamTrans 292, highly ranked Brisbane Elementary school, Lipman Middle School, the Community Park the local market and Ace Hardware. Enjoy hiking on San Bruno Mountain, relaxing at the local marina, and explore the Bay Trail. Don't forget Brisbane's exceptional weather! It's sunny in Brisbane even when it is fogged in all around us.
+		Most small homes don't provide off-street parking.  This one not only has off street parking, but is EV ready.  You can park a second car across the driveway if you need an extra space.  The city free shuttle to Bart and Caltrain stops at the corner.  Brisbane is just 20 minutes from downtown SF. If you are heading south, being out of SF saves a lot of time while still being able to enjoy the city on the weekends.  Within walking distance to SamTrans 292, highly ranked Brisbane Elementary school, Lipman Middle School, the Community Park, the local market and Ace Hardware. Enjoy hiking on San Bruno Mountain, relaxing at the local marina, and explore the Bay Trail. Don't forget Brisbane's exceptional weather! It's sunny in Brisbane even when it is fogged in all around us.
 		</p>
 
 		<p>
-		The unit was designed with accessibility in mind.  However, the unit is not fully ADA compliant.  The kitchen isnt large enough to accommodate a wheelchair. The vanity is the wrong type for wheelchair access.  
+		The unit was designed with accessibility in mind.  However, the unit is not fully ADA compliant.  The kitchen isnt large enough to accommodate a wheelchair. The vanity is the wrong type for wheelchair access.
 		</p>
 
 		<h2>
@@ -66,11 +66,11 @@
 		</p>
 
 		<h2>
-		Other stuff.  
+		Other stuff.
 		</h2>
 
 		<p>
-		The construction was done with nearly 100% reclaimed lumber and the project was zero waste with the possible exception of the asphalt hauled off by the contractor during water and sewer connections.  All scrap lumber, cardboard, Styrofoam and metal was recycled or upcycled.  Concrete, soil and rock was recycled on site. Project includes two 4000 gallon rain water tanks.   
+		The construction was done with nearly 100% reclaimed lumber and the project was zero waste with the possible exception of the asphalt hauled off by the contractor during water and sewer connections.  All scrap lumber, cardboard, Styrofoam and metal was recycled or upcycled.  Concrete, soil and rock was recycled on site. Project includes two 4000 gallon rain water tanks.
 		</p>
 <!--
 		<p>
@@ -92,7 +92,7 @@
 		<p>
 		Most small homes don't provide off-street parking.  This one not only has off street parking, but is EV ready.  You can park a second car across the driveway if you need an extra space.  The city free shuttle to Bart and Caltrain stops at the corner.  Brisbane is just 20 minutes from downtown SF. If you are heading south, being out of SF saves a lot of time while still being able to enjoy the city on the weekends.  Within walking distance to SamTrans 292, highly ranked Brisbane Elementary school, Lipman Middle School, the Community Park the local market and Ace Hardware. Enjoy hiking on San Bruno Mountain, relaxing at the local marina, and explore the Bay Trail. Don't forget Brisbane's exceptional weather! It's sunny in Brisbane even when it is fogged in all around us.
 		</p>
-		
+
 		<h2>
 		Terms:
 		</h2>
@@ -113,15 +113,15 @@
 		<h2>
 		Pictures:
 		</h2>
-				
+
 		<a href="img/pic-entry.jpg" target="_blank"><img src="img/pic-entry.jpg" alt="Entry" class="narrow"/></a>
-		
+
 		<a href="img/pic-bath.jpg" target="_blank"><img src="img/pic-bath.jpg" alt="Bathroom" class="narrow"/></a>
-	
+
 		<a href="img/kitchen.jpg" target="_blank"><img src="img/pic-kitchen.jpg" alt="Kitchen" class="wide"/></a>
-			
+
 		<a href="img/pic-west.jpg" target="_blank"><img src="img/pic-west.jpg" alt="Wall" class="wide"/></a>
-			
+
 		<a href="img/pic-lights.jpg" target="_blank"><img src="img/pic-lights.jpg" alt="Lights" class="wide"/></a>
 
 		<a href="img/pic-ceiling.jpg" target="_blank"><img src="img/pic-ceiling.jpg" alt="Ceiling" class="wide"/></a>
