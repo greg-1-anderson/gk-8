@@ -1,0 +1,25 @@
+html {
+  background-image: url("img/oak-leaf-tile.jpg");
+  background-repeat: repeat;
+}
+
+body { 
+	background-color: #fff;
+	border: 1px solid #ccc;
+	margin: 40px;
+	padding: 40px;
+}
+
+img {
+	border: 3px solid black;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.narrow {
+	height: 500px;
+}
+
+.wide {
+	width: 100%;
+}
