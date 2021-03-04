@@ -7,7 +7,7 @@
 		<h1>Star Cottage</h1>
 
 		<p>
-		Coming Soon....
+		Now available:
 		</p>
 
 		<ul>
@@ -62,7 +62,7 @@
 		</h2>
 
 		<p>
-		Tenant to pay any electricity charges beyond what the solar array provides.  Tenant also pays water.  20 gallon garbage service is included with rent.  Pets require and extra $100 deposit, no large aquariums.  Tenant must provide proof of renter's insurance within 30 days of taking possession.  $2600/month.  Deposit $3900.   Must provide proof of employment and submit a credit report and references.  Washer and dryer provided in unit.
+		Tenant to pay any electricity charges beyond what the solar array provides.  Tenant also pays water.  20 gallon garbage service is included with rent.  Pets require and extra $100 deposit, no large aquariums.  Tenant must provide proof of renter's insurance within 30 days of taking possession.  $2700/month.  Deposit $3950.   Must provide proof of employment and submit a credit report and references.  Washer and dryer provided in unit.
 		</p>
 
 		<h2>
@@ -98,7 +98,7 @@
 		</h2>
 
 		<p>
-		Tenant to pay any electricity charges beyond what the solar array provides.  Tenant also pays water.  20 gallon garbage service is included with rent.  Pets are fine, no large aquariums.  Tenant must provide proof of renter's insurance within 30 days of taking possession.  $2600/month.  Deposit $3900.   Must provide proof of employment and submit a credit report and references.
+		Tenant to pay any electricity charges beyond what the solar array provides.  Tenant also pays water.  20 gallon garbage service is included with rent.  Pets are fine, no large aquariums.  Tenant must provide proof of renter's insurance within 30 days of taking possession.  $2700/month.  Deposit $3950.   Must provide proof of employment and submit a credit report and references.
 		<p>
 
 		<h2>
