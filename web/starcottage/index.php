@@ -54,7 +54,7 @@
 		</p>
 
 		<p>
-		The unit was designed with accessibility in mind.  However, the unit is not fully ADA compliant.  The kitchen isnt large enough to accommodate a wheelchair. The vanity is the wrong type for wheelchair access.
+		The unit was designed with accessibility in mind.  However, the unit is not fully ADA compliant.  The kitchen isn't large enough to accommodate a wheelchair. The vanity is the wrong type for wheelchair access.
 		</p>
 
 		<h2>
@@ -62,7 +62,7 @@
 		</h2>
 
 		<p>
-		Tenant to pay any electricity charges beyond what the solar array provides.  Tenant also pays water.  20 gallon garbage service is included with rent.  Pets require and extra $100 deposit, no large aquariums.  Tenant must provide proof of renter's insurance within 30 days of taking possession.  $2700/month.  Deposit $3950.   Must provide proof of employment and submit a credit report and references.  Washer and dryer provided in unit.
+		Tenant to pay any electricity charges beyond what the solar array provides.  Tenant also pays water.  20 gallon garbage service is included with rent.  Pets require and extra $100 deposit, no large aquariums.  Tenant must provide proof of renter's insurance within 30 days of taking possession.  $2700/month.  Deposit $3950.   Must provide proof of employment and submit a credit report and references.  Washer with integrated dryer provided in unit.
 		</p>
 
 		<h2>
@@ -114,19 +114,19 @@
 		Pictures:
 		</h2>
 
+    <a href="img/star-cottage.jpg" target="_blank"><img src="img/star-cottage.jpg" alt="Star Cottage" class="wide"/></a>
+
 		<a href="img/pic-entry.jpg" target="_blank"><img src="img/pic-entry.jpg" alt="Entry" class="narrow"/></a>
 
-		<a href="img/pic-bath.jpg" target="_blank"><img src="img/pic-bath.jpg" alt="Bathroom" class="narrow"/></a>
+		<a href="img/bath2.jpg" target="_blank"><img src="img/bath2.jpg" alt="Bathroom" class="narrow"/></a>
 
-		<a href="img/kitchen.jpg" target="_blank"><img src="img/pic-kitchen.jpg" alt="Kitchen" class="wide"/></a>
+		<a href="img/washing-machine.jpg" target="_blank"><img src="img/washing-machine2.jpg" alt="Washing Machine" class="narrow"/></a>
 
-		<a href="img/pic-west.jpg" target="_blank"><img src="img/pic-west.jpg" alt="Wall" class="wide"/></a>
+		<a href="img/kitchen2.jpg" target="_blank"><img src="img/kitchen2.jpg" alt="Kitchen" class="wide"/></a>
 
 		<a href="img/pic-lights.jpg" target="_blank"><img src="img/pic-lights.jpg" alt="Lights" class="wide"/></a>
 
-		<a href="img/pic-ceiling.jpg" target="_blank"><img src="img/pic-ceiling.jpg" alt="Ceiling" class="wide"/></a>
-
-		<a href="img/pics-mountain.jpg" target="_blank"><img src="img/pics-mountain.jpg" alt="Mountains" class="wide"/></a>
+		<a href="img/west3.jpg" target="_blank"><img src="img/west3.jpg" alt="Mountains" class="wide"/></a>
 
 
 	</body>
