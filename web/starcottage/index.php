@@ -30,7 +30,7 @@
 		</ul>
 
 		<p>
-		Send inquires to brisbanerental@reetstreet.com
+		Send inquires to brisbanerental@couturecostume.com
 		</p>
 
 		<p>
