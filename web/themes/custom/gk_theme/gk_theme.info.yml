@@ -2,7 +2,7 @@ name: GreenKnowe Theme
 type: theme
 description: Theme for GreenKnowe
 package: Other
-core: 8.x
+core_version_requirement: ^8 || ^9
 libraries:
   - gk_theme/global-styling
 
