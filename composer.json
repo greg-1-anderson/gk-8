@@ -18,15 +18,15 @@
     "drupal/config_installer": "^1.4",
     "drupal/core-composer-scaffold": "^8.9",
     "drupal/core-recommended": "^8.9",
-    "drupal/devel": "^1.0@RC",
+    "drupal/devel": "^4",
     "drupal/migrate_plus": "^2.0",
     "drupal/migrate_source_csv": "^2.0",
     "drupal/migrate_tools": "^2.0",
     "drupal/pathauto": "^1.0@RC",
     "drupal/simple_block": "^1.0@beta",
-    "drupal/upgrade_status": "^3.4",
+    "drupal/upgrade_status": "^3",
     "drush-ops/behat-drush-endpoint": "^9.3",
-    "drush/drush": "^9.6",
+    "drush/drush": "^10",
     "pantheon-systems/drupal-integrations": "^8",
     "pantheon-systems/quicksilver-pushback": "^2"
   },
@@ -40,7 +40,8 @@
     "jcalderonzumba/gastonjs": "^1.0.2",
     "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
     "mikey179/vfsstream": "^1.2",
-    "phpunit/phpunit": "^4.8",
+    "phpstan/phpstan": "^0.12.86",
+    "phpunit/phpunit": "^8 | ^9 | ^10",
     "squizlabs/php_codesniffer": "^3.4.0",
     "symfony/css-selector": "^2.8"
   },
@@ -57,7 +58,7 @@
   "scripts": {
     "build-assets": [
       "@prepare-for-pantheon",
-      "composer install --optimize-autoloader --no-dev"
+      "composer install --optimize-autoloader"
     ],
     "lint": "find web/modules/custom web/themes/custom -name '*.php' -exec php -l {} \\;",
     "code-sniff": [
