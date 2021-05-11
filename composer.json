@@ -28,7 +28,8 @@
     "drush-ops/behat-drush-endpoint": "^9.3",
     "drush/drush": "^10",
     "pantheon-systems/drupal-integrations": "^8",
-    "pantheon-systems/quicksilver-pushback": "^2"
+    "pantheon-systems/quicksilver-pushback": "^2",
+    "phpunit/phpunit": "^8 | ^9 | ^10"
   },
   "require-dev": {
     "behat/behat": "3.*",
@@ -40,7 +41,6 @@
     "jcalderonzumba/gastonjs": "^1.0.2",
     "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
     "mikey179/vfsstream": "^1.2",
-    "phpunit/phpunit": "^4.8",
     "squizlabs/php_codesniffer": "^3.4.0",
     "symfony/css-selector": "^2.8"
   },
